@@ -32,6 +32,8 @@ title('Graph of Impedance,Z against Frequency')
 xlabel('Frequency,f(hz)'); ylabel('Impedance,Z')
 
 
+% ---------------------(c)Munai--------------------------
+
 
 
 
