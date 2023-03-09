@@ -9,11 +9,12 @@ x=[10000 20000 30000 40000 50000 60000 70000 80000 90000 100000 110000];
 n=length(x);
 R=1000;
 L=4.7e-3;
+
 %voltage
 v=[.1 .2 .4 .5 .6 .7 .9 1.0 1.2 1.4 1.5];
 
 for i=1:n
-    c=6.8e-9;
+    c=10e-9;
     f(i)=x(i);
     w(i,:)=2*pi*f(i);
     
@@ -24,7 +25,7 @@ for i=1:n
 end
 
 disp(abs(Z))
-
+z1=smooth(abs(Z));
 figure;
 plot(f,abs(Z))
 grid on
